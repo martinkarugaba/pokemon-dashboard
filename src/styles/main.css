@@ -14,13 +14,14 @@ header {
 main {
   min-height: calc(85vh - 20px);
 }
+
 .logo-wrapper {
   display: flex;
   justify-content: start;
   align-items: center;
 }
 
-.logo-wrapper p{
+.logo-wrapper p {
   margin-left: 1rem;
 }
 
@@ -33,11 +34,11 @@ main {
   place-items: center;
 }
 
-nav{
+nav {
   width: 25%;
 }
 
-nav ul{
+nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
