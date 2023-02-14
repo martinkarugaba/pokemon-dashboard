@@ -11,6 +11,9 @@ header {
   padding: 1rem 4rem;
 }
 
+main {
+  min-height: calc(85vh - 20px);
+}
 .logo-wrapper {
   display: flex;
   justify-content: start;
@@ -40,4 +43,11 @@ nav ul{
   align-items: center;
   list-style: none;
   width: 100%;
+}
+
+footer {
+  padding: 1rem 4rem;
+  border: 1px inset black;
+  border-radius: 15px;
+  margin: 5px 10px;
 }
