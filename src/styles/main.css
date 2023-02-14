@@ -1,4 +1,43 @@
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.logo-wrapper p{
+  margin-left: 1rem;
+}
+
+.logo {
+  border: 1px solid black;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+nav{
+  width: 25%;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 100%;
 }

@@ -24,19 +24,15 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader',
-        ],
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'WEBPACK-practice',
+      title: 'Pokemon Dashboard',
       filename: 'index.html',
-      template: 'src/template.html',
+      template: 'src/index.html',
     }),
   ],
 };
