@@ -1,0 +1,44 @@
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4rem 8rem;
+  gap: 4rem;
+}
+
+.card {
+  flex: 1;
+  border: 1px solid #212121;
+  border-radius: 15px;
+  padding: 2rem 1rem;
+  display: grid;
+  place-items: center;
+}
+
+.card .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  width: 70%;
+}
+
+.card .name {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.card .comment__button {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.card__image {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
