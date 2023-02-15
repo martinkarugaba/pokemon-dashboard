@@ -67,7 +67,6 @@ footer {
 .upfront {
   width: 60%;
   height: 70vh;
-  overflow: hidden;
   margin: 10% auto;
   border: 1px outset black;
   padding: 1rem 3rem;
@@ -88,13 +87,13 @@ footer {
   text-align: center;
 }
 
-.popupSubH{
+.popupSubH {
   text-align: center;
-  margin:2rem 0;
+  margin: 2rem 0;
 }
 
-.commentSection li{
-  list-style :disc;
+.commentSection li {
+  list-style: disc;
 }
 
 .Add-comment {
@@ -130,7 +129,7 @@ footer {
 .pokemonType li {
   width: fit-content;
   font-size: large;
-  padding: .1rem .5rem;
+  padding: 0.1rem 0.5rem;
   border-radius: 5px;
   background-color: rgb(218, 216, 216);
 }
