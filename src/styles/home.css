@@ -1,0 +1,27 @@
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4rem 8rem;
+  gap: 4rem;
+}
+
+.card {
+  flex: 1;
+  border: 1px solid #212121;
+  border-radius: 15px;
+  padding: 1rem;
+  display: grid;
+  place-items: center;
+}
+
+.card .name {
+  margin-top: 1rem;
+}
+
+.card__image {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
