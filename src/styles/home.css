@@ -1,3 +1,18 @@
+@keyframes breathing {
+  0% {
+    width: 150px;
+  }
+  
+  50% {
+    width: 200px;
+  }
+
+  100% {
+    width: 150px;
+  }
+
+}
+
 .cards-container {
   display: flex;
   justify-content: center;
@@ -9,6 +24,7 @@
 
 .card {
   flex: 1;
+  flex-basis: 300px;
   border: 1px solid #212121;
   border-radius: 15px;
   padding: 2rem 1rem;
@@ -41,4 +57,7 @@
   width: 200px;
   height: 200px;
   object-fit: contain;
+  animation-name: breathing;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
