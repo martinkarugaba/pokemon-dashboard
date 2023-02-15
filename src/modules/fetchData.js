@@ -8,7 +8,7 @@ const fetchImage = async (url) => {
   const {
     sprites: {
       other: {
-        dream_world: { front_default },
+        dream_world: { front_default: image },
       },
     },
     species: { name },
@@ -16,7 +16,7 @@ const fetchImage = async (url) => {
 
   cardsContainer.innerHTML += `
     <div class='card'>
-      <img class="card__image" src=${front_default} alt=${name}/>
+      <img class="card__image" src=${image} alt=${name}/>
       <div class="title">
         <p class="name">${name}</p>
         <p class="card__likes">Likes <span>(1)</span> <i class="fa-solid fa-heart"></i></p>
@@ -26,12 +26,12 @@ const fetchImage = async (url) => {
   `;
 };
 
-export const fetchData = async () => {
+const fetchData = async () => {
   const response = await fetch(baseUrl);
   const data = await response.json();
   const { results } = data;
 
-  const info = results.forEach((item) => {
+  results.forEach((item) => {
     const { url } = item;
     fetchImage(url);
   });
