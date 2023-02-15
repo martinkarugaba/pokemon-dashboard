@@ -1,5 +1,3 @@
-import joke from './joke';
+import './modules/fetchData.js';
 import './styles/main.css';
-
-console.log(joke());
-// console.log("mf")
+import './styles/home.css';
