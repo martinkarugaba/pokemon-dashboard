@@ -1,3 +1,7 @@
+import showPop from "./commentPopUp";
+const showPop = () => {
+  console.log("hello")
+}
 const baseUrl = 'https://pokeapi.co/api/v2/pokemon?limit=12&offset=0';
 const cardsContainer = document.querySelector('.cards-container');
 
@@ -24,6 +28,8 @@ const fetchImage = async (url) => {
       <button class="comment__button">Comment</button>
     </div>
   `;
+
+  await event()
 };
 
 const fetchData = async () => {
@@ -36,5 +42,10 @@ const fetchData = async () => {
     fetchImage(url);
   });
 };
+
+const event = () => {
+  const btn = document.querySelector('.comment__button');
+  btn.addEventListener('click',showPop);
+}
 
 fetchData();

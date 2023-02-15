@@ -68,6 +68,7 @@ footer {
   width: 60%;
   height: 70vh;
   margin: 10% auto;
+  background-color: #fff;
   border: 1px outset black;
   padding: 1rem 3rem;
   overflow: scroll;
