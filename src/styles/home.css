@@ -11,13 +11,30 @@
   flex: 1;
   border: 1px solid #212121;
   border-radius: 15px;
-  padding: 1rem;
+  padding: 2rem 1rem;
   display: grid;
   place-items: center;
 }
 
+.card .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  width: 70%;
+}
+
 .card .name {
-  margin-top: 1rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.card .comment__button {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  margin-top: 2rem;
+  cursor: pointer;
 }
 
 .card__image {
