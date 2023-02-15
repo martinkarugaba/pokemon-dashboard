@@ -16,7 +16,6 @@
   100% {
     width: 90%;
   }
-
 }
 
 header {
@@ -92,7 +91,6 @@ footer {
 
 #namePop {
   font-size: 35px;
-  letter-spacing: 100;
   font-weight: 800;
   text-transform: uppercase;
 }
