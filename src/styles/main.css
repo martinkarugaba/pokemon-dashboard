@@ -38,7 +38,7 @@ nav {
   width: 25%;
 }
 
-nav ul {
+nav .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,4 +51,94 @@ footer {
   border: 1px inset black;
   border-radius: 15px;
   margin: 5px 10px;
+}
+
+.popupsection {
+  position: fixed;
+  top: 0%;
+  left: auto;
+  right: auto;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(255, 255, 255, 70%);
+  margin: auto;
+}
+
+.upfront {
+  width: 60%;
+  height: 70vh;
+  overflow: hidden;
+  margin: 10% auto;
+  border: 1px outset black;
+  padding: 1rem 3rem;
+  overflow: scroll;
+  border-radius: 15px;
+}
+
+.wrapimageBtn {
+  display: flex;
+  gap: 1rem;
+}
+
+.popupImg {
+  width: 100%;
+}
+
+.pokemonName {
+  text-align: center;
+}
+
+.popupSubH{
+  text-align: center;
+  margin:2rem 0;
+}
+
+.commentSection li{
+  list-style :disc;
+}
+
+.Add-comment {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 -5px 16px 6px rgba(0, 0, 0, 0.5);
+  margin: 5rem auto 1rem auto;
+}
+
+.inputs {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  padding: 1rem 3rem;
+}
+
+.inputs input,
+.inputs button {
+  height: 2rem;
+}
+
+.pokemonLocation,
+.pokemonType {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.pokemonType li {
+  width: fit-content;
+  font-size: large;
+  padding: .1rem .5rem;
+  border-radius: 5px;
+  background-color: rgb(218, 216, 216);
+}
+
+.inputs textarea {
+  height: 4rem;
+}
+
+.hidden {
+  display: none;
 }

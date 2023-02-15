@@ -1,35 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <header>
-      <div class="logo-wrapper">
-        <div class="logo">
-          Sci-fi <br />
-          logo
-        </div>
-        <p>Spaceships(6)</p>
-      </div>
-      <nav>
-        <ul>
-          <li>Planest</li>
-          <li>Races</li>
-          <li>Play</li>
-        </ul>
-      </nav>
-    </header>
-    <main></main>
 
-    <footer>
-      <p>All Credit belongs to Martin and Ardash under MIT License</p>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/b89b7c8adf.js" crossorigin="anonymous"></script>
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+</head>
+
+<body>
+  <header>
+    <div class="logo-wrapper">
+      <div class="logo">
+        Sci-fi <br />
+        logo
+      </div>
+      <p>Spaceships(6)</p>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li>Planest</li>
+        <li>Races</li>
+        <li>Play</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <button class="commentBtn">1</button>
+    <button class="commentBtn">2</button>
+    <button class="commentBtn">3</button>
+    <button class="commentBtn">4</button>
+    <button class="commentBtn">5</button>
+    <button class="commentBtn">6</button>
+  </main>
+
+  <footer>
+    <p>All Credit belongs to Martin and Ardash under MIT License</p>
+  </footer>
+
+  <section class="popupsection">
+    <div class="upfront">
+      <div class="wrapimageBtn">
+        <div class="imageWrap">
+          <img id="imagePop" src="./media/gow.png" alt="imageLoading" class="popupImg">
+        </div>
+        <i class="fa-solid fa-xmark cross"></i>
+      </div>
+
+      <h2 class="pokemonName" id="namePop">AAAA</h2>
+      <h3 class="popupSubH">Type</h3>
+      <ul class="pokemonType" id="typeList">
+        <!-- <li>land</li>
+        <li>fire</li> -->
+      </ul>
+      <h3 class="popupSubH">Location</h3>
+      <ul class="pokemonLocation" id="Location">
+        <!-- <li>MAKE IN CITY</li> -->
+      </ul>
+      <h3 class="popupSubH">Comments <span id="commentCount">()</span></h3>
+      <ul class="commentSection" id="commentsPop">
+        <!-- <li><span class="date">15-02-2023</span> This is awesome</li> -->
+      </ul>
+      <form class="Add-comment">
+        <h2 class="popupSubH">Add A Comment</h2>
+        <div class="inputs">
+          <input type="text" class="name" placeholder="Your Name">
+          <textarea class="Comment" id="" cols="30" rows="10"></textarea>
+          <button class="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+
+  </section>
+</body>
+
 </html>
