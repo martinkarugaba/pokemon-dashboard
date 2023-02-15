@@ -4,6 +4,20 @@
   box-sizing: border-box;
 }
 
+@keyframes breathing2 {
+  0% {
+    width: 90%;
+  }
+
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 90%;
+  }
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -38,7 +52,7 @@ nav {
   width: 25%;
 }
 
-nav ul {
+nav .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,4 +65,118 @@ footer {
   border: 1px inset black;
   border-radius: 15px;
   margin: 5px 10px;
+}
+
+.popupsection {
+  position: fixed;
+  top: 0%;
+  left: auto;
+  right: auto;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(255, 255, 255, 70%);
+  margin: auto;
+}
+
+.upfront {
+  width: 60%;
+  height: 90vh;
+  margin: 30px auto;
+  background-color: #fff;
+  border: 1px outset black;
+  padding: 1rem 3rem;
+  overflow: scroll;
+  border-radius: 15px;
+}
+
+#namePop {
+  font-size: 35px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.wrapimageBtn {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.imageWrap {
+  width: 100%;
+}
+
+.popupImg {
+  width: 100%;
+  height: 80vh;
+  flex-grow: 5;
+  animation-name: breathing2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.cross {
+  flex-grow: 1;
+}
+
+.pokemonName {
+  text-align: center;
+}
+
+.popupSubH {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.commentSection li {
+  list-style: disc;
+}
+
+.Add-comment {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 -5px 16px 6px rgba(0, 0, 0, 0.5);
+  margin: 5rem auto 1rem auto;
+}
+
+.inputs {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  padding: 1rem 3rem;
+}
+
+.inputs input,
+.inputs textarea,
+.inputs button {
+  height: 2rem;
+  padding: 0.125rem;
+  outline: none;
+  border-radius: 5px;
+}
+
+.pokemonLocation,
+.pokemonType {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.pokemonType li {
+  width: fit-content;
+  font-size: large;
+  padding: 0.1rem 0.5rem;
+  border-radius: 5px;
+  background-color: rgb(218, 216, 216);
+}
+
+.inputs textarea {
+  height: 4rem;
+}
+
+.hidden {
+  display: none;
 }
