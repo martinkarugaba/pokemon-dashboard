@@ -1,3 +1,4 @@
+import addLike from './addLike.js';
 import showPop from './commentPopUP.js'; // eslint-disable-line
 const baseUrl = 'https://pokeapi.co/api/v2/pokemon?limit=12&offset=0';
 const cardsContainer = document.querySelector('.cards-container');
@@ -7,6 +8,7 @@ const dataBase = [];
 const fetchImage = async (url) => {
   const response = await fetch(url);
   const data = await response.json();
+  //console.log(data.id);
   const {
     sprites: {
       other: {
@@ -22,11 +24,13 @@ const fetchImage = async (url) => {
       <img class="card__image" src=${image} alt=${name}/>
       <div class="title">
         <p class="name">${name}</p>
-        <p class="card__likes">Likes <span>(1)</span> <i class="fa-solid fa-heart"></i></p>
+        <p class="card__likes">Likes <span data-name=${name} class="${name}">${0}</span> <i class="fa-solid fa-heart like" data-name=${name}></i></p>
       </div>
       <button class="comment__button" id="${id}">Comment</button>
     </div>
   `;
+
+  addLike();
 
   dataBase.push({
     id,
@@ -38,7 +42,6 @@ const fetchData = async () => {
   const response = await fetch(baseUrl);
   const data = await response.json();
   const { results } = data;
-  // console.log(results)
 
   results.forEach((item) => {
     const { url } = item;
@@ -52,6 +55,6 @@ const fetchData = async () => {
   });
 };
 
-export default dataBase;
-
 fetchData();
+
+export default dataBase;

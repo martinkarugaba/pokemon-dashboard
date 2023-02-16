@@ -60,3 +60,13 @@
   animation-duration: 5s;
   animation-iteration-count: infinite;
 }
+
+.card .like{
+  cursor: pointer;
+  transition: all ease-in .05s;
+  margin-left: 1rem;
+}
+
+.card .like:hover{
+  scale: 1.2;
+}
