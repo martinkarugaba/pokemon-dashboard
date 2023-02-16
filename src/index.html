@@ -46,14 +46,17 @@
         <i class="fa-solid fa-xmark cross"></i>
       </div>
       <h2 class="pokemonName" id="namePop"></h2>
-      <h3 class="popupSubH">Comments <span id="commentCount">()</span></h3>
+      <h3 class="popupSubH">Comments <span id="commentCount">(0)</span></h3>
       <ul class="commentSection" id="commentsPop">
+        
       </ul>
       <form class="Add-comment">
         <h2 class="popupSubH">Add A Comment</h2>
         <div class="inputs">
-          <input type="text" class="name" placeholder="Your Name">
-          <textarea class="Comment" id="" cols="30" rows="10"></textarea>
+          <input id="commentPostId" type="hidden" value="">
+          <input type="text" id="name" class="name" placeholder="Your Name">
+          <textarea class="Comment" id="comment" cols="30" rows="10"></textarea>
+          <small class="error"></small>
           <button class="submit">Submit</button>
         </div>
       </form>

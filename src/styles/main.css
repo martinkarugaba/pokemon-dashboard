@@ -177,6 +177,44 @@ footer {
   height: 4rem;
 }
 
+.usr-name,
+.cmnt {
+  text-transform: capitalize;
+}
+
+.usr-name {
+  font-weight: bold;
+  width: 14%;
+}
+
+.date {
+  font-size: 11px;
+}
+
+.commentSection {
+  border: 1px solid black;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.commentsWow {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 15px;
+  gap: 1rem;
+  overflow: hidden;
+  padding: .3rem;
+}
+
+.commentsWow:nth-of-type(even) {
+  background-color: rgb(215, 212, 212);
+}
+
+.commentsWow:hover{
+  background-color: rgba(252, 160, 160, 0.596);
+}
+
 .hidden {
   display: none;
 }
