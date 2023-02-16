@@ -61,12 +61,12 @@
   animation-iteration-count: infinite;
 }
 
-.card .like{
+.card .like {
   cursor: pointer;
-  transition: all ease-in .05s;
+  transition: all ease-in 0.05s;
   margin-left: 1rem;
 }
 
-.card .like:hover{
+.card .like:hover {
   scale: 1.2;
 }
