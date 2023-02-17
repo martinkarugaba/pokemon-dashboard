@@ -151,7 +151,12 @@ Clone this repository to your desired folder:
 
 ### Run tests
 
-- To run all test cases you need to run `npm test` in the root dir
+- To run all test cases you need to run `npm test` in the root dir 
+- Linters for files run in the root dir
+  - `npx eslint .` for JS linting
+  - `npx stylelint "**/*.{css,scss}"`for CSS or SCSS linting
+  - `npx hint .` for HTML linting
+  - `--fix` flag for intant fixable fix
  
 
 ### Deployment

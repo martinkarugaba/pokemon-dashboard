@@ -34,7 +34,7 @@ const fetchImage = async (url) => {
   dataBase.push({
     id,
     items: [image, name],
-    move: data.moves.slice(0,4)
+    move: data.moves.slice(0, 4),
   });
 };
 

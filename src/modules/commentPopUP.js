@@ -2,20 +2,18 @@ import dataBase from './fetchData.js'; // eslint-disable-line
 import getComments from './comment-post.js';
 
 const showPop = async (id) => {
-  let move;
   const dataRequired = dataBase.filter((data) => data.id === Number(id));
-  move=[...dataRequired[0].move]
-  
+  const move = [...dataRequired[0].move];
+
   const namePop = document.querySelector('#namePop');
   const imagePop = document.querySelector('#imagePop');
   imagePop.src = '';
   const specialMoves = document.querySelector('.specialmoves');
 
-  move.forEach(element => {
-    console.log(element.move.name)
-    specialMoves.innerHTML +=`
+  move.forEach((element) => {
+    specialMoves.innerHTML += `
       <li><span>${element.move.name}</span></li>
-    `
+    `;
   });
   const unhidden = document.querySelector('.popupsection');
   const commentPostId = document.querySelector('#commentPostId');
@@ -37,7 +35,7 @@ const hidePop = () => {
   const commentCount = document.querySelector('#commentCount');
   commentCount.innerHTML = '(0)';
   const specialMoves = document.querySelector('.specialmoves');
-  specialMoves.innerHTML=''
+  specialMoves.innerHTML = '';
   unhidden.classList.toggle('hidden');
 };
 
