@@ -1,0 +1,73 @@
+@keyframes breathing {
+  0% {
+    width: 150px;
+  }
+
+  50% {
+    width: 200px;
+  }
+
+  100% {
+    width: 150px;
+  }
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4rem 8rem;
+  gap: 4rem;
+}
+
+.card {
+  flex: 1;
+  flex-basis: 300px;
+  border: 1px solid #212121;
+  border-radius: 15px;
+  padding: 2rem 1rem;
+  display: grid;
+  place-items: center;
+}
+
+.card .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  width: 70%;
+}
+
+.card .name {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.card .comment__button {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.card__image {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  animation-name: breathing;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.card .like {
+  cursor: pointer;
+  transition: all ease-in 0.05s;
+  margin-left: 1rem;
+  color: rgba(244, 176, 176, 0.708);
+}
+
+.card .like:hover {
+  scale: 1.2;
+}

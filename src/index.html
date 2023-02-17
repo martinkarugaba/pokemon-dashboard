@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/b89b7c8adf.js" crossorigin="anonymous"></script>
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+</head>
+
+<body>
+  <header>
+    <div class="logo-wrapper">
+      <div class="logo">
+        <img src="./logo.png" alt="logo">
+      </div>
+      <p>Pokemon <span id="pokemonCounter">(12)</p>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li>Battle Grounds</li>
+        <li>Matches</li>
+        <li>Tournaments</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="cards-container">
+    </section>
+  </main>
+
+  <footer>
+    <p>All Credit belongs to Martin and Ardash under MIT License</p>
+  </footer>
+  <!-- to hide the pop up we need to add hidden class in below section -->
+  <section class="popupsection hidden">
+    <div class="upfront">
+      <div class="wrapimageBtn">
+        <div class="imageWrap">
+          <img id="imagePop" src="" alt="imageLoading" class="popupImg">
+        </div>
+        <i class="fa-solid fa-xmark cross"></i>
+      </div>
+      <h2 class="pokemonName" id="namePop"></h2>
+      <h3 class="moves">Special moves</h3>
+      <ul class="specialmoves">
+      </ul>
+      <h3 class="popupSubH">Comments <span id="commentCount">(0)</span></h3>
+      <ul class="commentSection" id="commentsPop">
+        
+      </ul>
+      <form class="Add-comment">
+        <h2 class="popupSubH">Add Comments</h2>
+        <div class="inputs">
+          <input id="commentPostId" type="hidden" value="">
+          <input type="text" id="name" class="name" placeholder="Your Name">
+          <textarea class="Comment" id="comment" cols="30" rows="10"></textarea>
+          <small class="error"></small>
+          <button class="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</body>
+
+</html>
