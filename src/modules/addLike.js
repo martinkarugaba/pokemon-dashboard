@@ -19,7 +19,7 @@ const retrieveLike = async (name) => {
   const likesContainer = document.querySelector(`.${name}`);
   const heart = document.querySelector(`.${name}.like`);
   likesContainer.innerHTML = likedItem.likes;
-  heart.style.color = 'rgba(244, 176, 176, 0.708)'
+  heart.style.color = 'rgba(244, 176, 176, 0.708)';
 };
 
 const addLike = async () => {
@@ -30,9 +30,9 @@ const addLike = async () => {
       const like = { item_id: name, name };
       const { item_id: id } = like;
       const heart = document.querySelector(`.${name}.like`);
-      heart.style.color = 'red'
+      heart.style.color = 'red';
       await sendLike(like);
-      retrieveLike(id, name);      
+      retrieveLike(id, name);
     });
   });
 };
