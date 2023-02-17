@@ -107,7 +107,7 @@
 > This link will guide you to my project
 
 - [Live Demo Link](https://martinkarugaba.github.io/pokemon-dashboard/dist/)
-- [Loom Video]()
+- [Loom Video](https://www.loom.com/share/c97562d2fb964f129f4151ee5d42b9a7)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
