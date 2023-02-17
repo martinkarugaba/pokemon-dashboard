@@ -24,7 +24,7 @@ const fetchImage = async (url) => {
       <img class="card__image" src=${image} alt=${name}/>
       <div class="title">
         <p class="name">${name}</p>
-        <p class="card__likes">Likes <span data-name=${name} class="${name}">${0}</span> <i class="fa-solid fa-heart like" data-name=${name}></i></p>
+        <p class="card__likes">Likes <span data-name=${name} class="like-count ${name}">${0}</span> <i class="fa-solid fa-heart ${name} like" data-name=${name}></i></p>
       </div>
       <button class="comment__button" id="${id}">Comment</button>
     </div>
