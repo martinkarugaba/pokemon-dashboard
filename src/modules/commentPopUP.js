@@ -28,8 +28,12 @@ const hidePop = () => {
 
 const cross = document.querySelector('.cross');
 const popupsectionBackground = document.querySelector('.popupsection');
+const upfront = document.querySelector('.upfront');
 
-cross.addEventListener('click', hidePop);
+upfront.addEventListener('click', (event) => {
+  event.stopPropagation();
+});
 popupsectionBackground.addEventListener('click', hidePop);
 
+cross.addEventListener('click', hidePop);
 export default showPop;
