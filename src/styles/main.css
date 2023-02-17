@@ -206,6 +206,36 @@ footer {
   overflow: hidden;
 }
 
+.specialmoves {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  margin: auto;
+  list-style: none;
+}
+
+.moves {
+  text-align: center;
+  font-style: italic;
+  margin: 2rem auto;
+}
+
+.specialmoves li {
+  width: 46%;
+  text-align: center;
+  /* border: 1px solid black; */
+}
+
+.specialmoves li span {
+  width: 60%;
+  display: block;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: blanchedalmond;
+}
+
 .commentsWow {
   display: flex;
   justify-content: flex-start;

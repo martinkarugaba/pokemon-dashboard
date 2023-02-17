@@ -8,7 +8,6 @@ const dataBase = [];
 const fetchImage = async (url) => {
   const response = await fetch(url);
   const data = await response.json();
-  // console.log(data.id);
   const {
     sprites: {
       other: {
@@ -31,10 +30,11 @@ const fetchImage = async (url) => {
   `;
 
   addLike();
-
+  // console.log(data)
   dataBase.push({
     id,
     items: [image, name],
+    move: data.moves.slice(0,4)
   });
 };
 
