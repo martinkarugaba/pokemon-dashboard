@@ -21,11 +21,15 @@ const showPop = async (id) => {
 
 const hidePop = () => {
   const unhidden = document.querySelector('.popupsection');
+  const commentCount = document.querySelector('#commentCount');
+  commentCount.innerHTML = '(0)';
   unhidden.classList.toggle('hidden');
 };
 
 const cross = document.querySelector('.cross');
+const popupsectionBackground = document.querySelector('.popupsection');
 
 cross.addEventListener('click', hidePop);
+popupsectionBackground.addEventListener('click', hidePop);
 
 export default showPop;
