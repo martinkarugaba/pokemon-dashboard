@@ -45,7 +45,7 @@
 
 > This Project is a pokemon social meadia
 
-**Awesome Books** is a JavaScript and API based  project
+**Awesome Books** is a JavaScript and API-based project
 
 <br>
 
@@ -95,7 +95,7 @@
 - **You can check your pokemon**
 - **you can add likes for your fav pokemon**
 - **you can add comments for your fav pokemon**
-- **An nice animation and popup**
+- **Nice animation and popup**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -226,7 +226,7 @@ If you like my Project give it a Star ✨🌟
 
 - **Question_2** How to add like 
 
-  - Answer_2 Just Tap on heart button and wait for while
+  - Answer_2 Just Tap on the heart button and wait for awhile
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
