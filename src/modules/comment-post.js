@@ -1,6 +1,7 @@
 const id = '01bPQut4VIty6lAPGuX9';
 const baseUrl = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${id}/comments`;
-const commentCounter = require('./cmntCounter')
+const commentCounter = require('./cmntCounter.js');
+
 const postComments = async (name, comment1, id) => {
   await fetch(baseUrl, {
     method: 'POST',

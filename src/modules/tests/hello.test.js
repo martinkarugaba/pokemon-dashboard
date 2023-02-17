@@ -1,11 +1,11 @@
 describe('Hello module', () => {
-    let message;
+  let message;
 
-    beforeEach(() => {
-        message = 'hello';
-    });
+  beforeEach(() => {
+    message = 'hello';
+  });
 
-    test('message should be "hello"', () => {
-        expect(message).toBe('hello');
-    });
+  test('message should be "hello"', () => {
+    expect(message).toBe('hello');
+  });
 });

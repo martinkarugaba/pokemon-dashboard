@@ -1,9 +1,7 @@
-
 const commentCounter = require('../cmntCounter.js');
 
-
 describe('Comments counter', () => {
-  let  commentCount;
+  let commentCount;
   it('should update the comment count when there are comments', () => {
     window.document.body.innerHTML = `
      <div id="commentCount"></div>
