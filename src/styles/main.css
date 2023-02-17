@@ -25,6 +25,10 @@ header {
   padding: 1rem 4rem;
 }
 
+.logo img{
+  width: 100%;
+}
+
 main {
   min-height: calc(85vh - 20px);
 }
