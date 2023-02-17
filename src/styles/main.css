@@ -98,6 +98,10 @@ footer {
   border-radius: 15px;
 }
 
+.upfront::-webkit-scrollbar {
+  display: none;
+}
+
 #namePop {
   font-size: 35px;
   font-weight: 800;
@@ -204,6 +208,36 @@ footer {
   border: 1px solid black;
   border-radius: 15px;
   overflow: hidden;
+}
+
+.specialmoves {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  margin: auto;
+  list-style: none;
+}
+
+.moves {
+  text-align: center;
+  font-style: italic;
+  margin: 2rem auto;
+}
+
+.specialmoves li {
+  width: 46%;
+  text-align: center;
+}
+
+.specialmoves li span {
+  text-transform: uppercase;
+  width: 60%;
+  display: block;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: blanchedalmond;
 }
 
 .commentsWow {

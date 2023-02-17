@@ -3,16 +3,27 @@ import getComments from './comment-post.js';
 
 const showPop = async (id) => {
   const dataRequired = dataBase.filter((data) => data.id === Number(id));
+  const move = [...dataRequired[0].move];
+
   const namePop = document.querySelector('#namePop');
   const imagePop = document.querySelector('#imagePop');
   imagePop.src = '';
+  const specialMoves = document.querySelector('.specialmoves');
+
+  move.forEach((element) => {
+    specialMoves.innerHTML += `
+      <li><span>${element.move.name}</span></li>
+    `;
+  });
   const unhidden = document.querySelector('.popupsection');
   const commentPostId = document.querySelector('#commentPostId');
   const name = document.querySelector('#name');
   const comment = document.querySelector('#comment');
   name.value = '';
   comment.value = '';
-  commentPostId.value = dataRequired[0].items[1]; // eslint-disable-line
+
+  //  this eslint is not working for sure i had destructured it then too
+  commentPostId.value = dataRequired[0].items[1]; // eslint-disable-line 
   namePop.innerHTML = dataRequired[0].items[1]; // eslint-disable-line
   imagePop.src = `${dataRequired[0].items[0]}`; // eslint-disable-line
   unhidden.classList.toggle('hidden');
@@ -23,6 +34,8 @@ const hidePop = () => {
   const unhidden = document.querySelector('.popupsection');
   const commentCount = document.querySelector('#commentCount');
   commentCount.innerHTML = '(0)';
+  const specialMoves = document.querySelector('.specialmoves');
+  specialMoves.innerHTML = '';
   unhidden.classList.toggle('hidden');
 };
 
