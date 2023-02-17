@@ -98,6 +98,10 @@ footer {
   border-radius: 15px;
 }
 
+.upfront::-webkit-scrollbar {
+  display: none;
+}
+
 #namePop {
   font-size: 35px;
   font-weight: 800;
@@ -224,7 +228,6 @@ footer {
 .specialmoves li {
   width: 46%;
   text-align: center;
-  /* border: 1px solid black; */
 }
 
 .specialmoves li span {
