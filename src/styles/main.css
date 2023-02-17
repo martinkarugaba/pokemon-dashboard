@@ -228,6 +228,7 @@ footer {
 }
 
 .specialmoves li span {
+  text-transform: uppercase;
   width: 60%;
   display: block;
   margin: auto;
