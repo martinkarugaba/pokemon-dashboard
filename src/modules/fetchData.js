@@ -2,13 +2,13 @@ import addLike from './addLike.js';
 import showPop from './commentPopUP.js'; // eslint-disable-line
 const baseUrl = 'https://pokeapi.co/api/v2/pokemon?limit=12&offset=0';
 const cardsContainer = document.querySelector('.cards-container');
+const itemsCount = document.querySelector('.items-count');
 
 const dataBase = [];
 
 const fetchImage = async (url) => {
   const response = await fetch(url);
   const data = await response.json();
-  // console.log(data.id);
   const {
     sprites: {
       other: {
@@ -42,6 +42,7 @@ const fetchData = async () => {
   const response = await fetch(baseUrl);
   const data = await response.json();
   const { results } = data;
+  itemsCount.innerHTML = `(${results.length})`;
 
   results.forEach((item) => {
     const { url } = item;
