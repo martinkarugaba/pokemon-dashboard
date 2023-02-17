@@ -1,3 +1,11 @@
-test('just testing test is working or not:"hello"', () => {
-  expect('hello').toBe('hello');
+describe('Hello module', () => {
+    let message;
+
+    beforeEach(() => {
+        message = 'hello';
+    });
+
+    test('message should be "hello"', () => {
+        expect(message).toBe('hello');
+    });
 });

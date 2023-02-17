@@ -1,6 +1,6 @@
 const id = '01bPQut4VIty6lAPGuX9';
 const baseUrl = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${id}/comments`;
-
+const commentCounter = require('./cmntCounter')
 const postComments = async (name, comment1, id) => {
   await fetch(baseUrl, {
     method: 'POST',
@@ -13,12 +13,6 @@ const postComments = async (name, comment1, id) => {
       'Content-type': 'application/json; charset=UTF-8',
     },
   });
-};
-
-const commentCounter = () => {
-  const comments = document.querySelectorAll('.commentsWow');
-  const commentCount = document.querySelector('#commentCount');
-  commentCount.innerHTML = `(${comments.length})`;
 };
 
 const getComments = async (querryid) => {
