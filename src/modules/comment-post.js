@@ -50,7 +50,7 @@ const formSubmition = async () => {
   const error = document.querySelector('.error');
 
   if (
-    name.value.length > 8
+    name.value.length > 15
     || name.value.trim().length === 0
     || comment.value.trim().length === 0
     || comment.value.length > 20
