@@ -1,6 +1,8 @@
 import addLike from './addLike.js';
 import showPop from './commentPopUP.js'; // eslint-disable-line
-const baseUrl = 'https://pokeapi.co/api/v2/pokemon?limit=12&offset=0';
+import itemCounter from './itemsCount.js';
+
+const baseUrl = 'https://pokeapi.co/api/v2/pokemon?limit=102&offset=0';
 const cardsContainer = document.querySelector('.cards-container');
 
 const dataBase = [];
@@ -28,7 +30,7 @@ const fetchImage = async (url) => {
       <button class="comment__button" id="${id}">Comment</button>
     </div>
   `;
-
+  itemCounter();
   addLike();
   // console.log(data)
   dataBase.push({
