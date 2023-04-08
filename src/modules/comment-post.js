@@ -53,7 +53,7 @@ const formSubmition = async () => {
     name.value.length > 15
     || name.value.trim().length === 0
     || comment.value.trim().length === 0
-    || comment.value.length > 20
+    || comment.value.length > 85
   ) {
     error.innerHTML = 'please submit valid comment or name';
     submitBtn.disabled = false;
