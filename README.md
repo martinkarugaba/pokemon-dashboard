@@ -20,6 +20,7 @@
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
+ - [🧪 Linters And Deployment](#linters)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
@@ -43,17 +44,19 @@
 
 # 📖 Pokemon Dashboard <a name="about-project"></a>
 
-> This Project is a pokemon social meadia
+This Project is a pokemon social media, where you can like comment on you fav Pokemon
 
-**Awesome Books** is a JavaScript and API-based project
+**Pokemon Dashboard** is a JavaScript and API-based project
 
-<br>
+## 🧪 Linters And Deployment <a name="linters"></a>
+[![Linters](https://github.com/martinkarugaba/pokemon-dashboard/actions/workflows/linters.yml/badge.svg)](https://github.com/martinkarugaba/pokemon-dashboard/actions/workflows/linters.yml)
+[![pages-build-deployment](https://github.com/martinkarugaba/pokemon-dashboard/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/martinkarugaba/pokemon-dashboard/actions/workflows/pages/pages-build-deployment)
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> In this project I used many skills, tech and libraries
+In this project We used many skills, tech and libraries
 
 <details>
   <summary>Documentation</summary>
@@ -79,7 +82,7 @@
 <summary>API involved</summary>
   <ul>
     <li><a href="https://pokeapi.co/"></a>Pokemon API</li>
-    <li><a href="https://www.notion.so/microverse/Involvement-API-869e60b5ad104603aa6db59e08150270">Involement API</a></li>
+    <li><a href="https://www.notion.so/microverse/Involvement-API-869e60b5ad104603aa6db59e08150270">Involvement API</a></li>
   </ul>
 </details>
 
@@ -90,7 +93,6 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Following features you should observe
 
 - **You can check your pokemon**
 - **you can add likes for your fav pokemon**
@@ -104,7 +106,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> This link will guide you to my project
+This link will guide you to our project and presentation
 
 - [Live Demo Link](https://martinkarugaba.github.io/pokemon-dashboard/dist/)
 - [Loom Video](https://www.loom.com/share/c97562d2fb964f129f4151ee5d42b9a7)
@@ -115,60 +117,67 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
->For having local file and project you can fork this repo 
-
->And for making changes you you should follow prerequisites
+For having local file and project you can fork this repo or clone it using `git clone https://github.com/PowerLevel9000/pokemon-dashboard.git`
+And for making changes you you should follow prerequisites
 
 
 ### Prerequisites
-To edit this project you need:
- - Node.js installed
- - A Terminal 
+
+In order to edit this project you need:
+
+ - Any text editor such as note pad and word pad
  - A web browser
+ - Node js installed
  - An IDE
 
- - suggested IDE
-   - visual studio code
-   - atom 
-   - visual code 
+#### Suggested IDE
+ - Visual studio code `I prefer this one 🙃🙃`
+ - Atom 
+ - Sublime 
+ - IntelliJ IDEA
+ - Visual code 
 
 ### Setup
 
 Clone this repository to your desired folder:
 
- - And run `npm i` in root dir <small>to install node modules</small>
- - Then run `npm run dev` or `npm start`
- - All this makes our project open  in the browser
+- Open your terminal there (bash cmd powershell run etc...) and run `npm i` to install node modules
+- `npm run dev` or `npm run start` this will open project in browser
+- If you to edit something edit in src dir and then run in terminal `npm run build` to build it for production
 
+- Before deployment have some linter check 
+  - [ ] `npx stylelint "**/*.{css,scss}"` for css and saas file
+  - [ ] `npx eslint .` for js files
+  - [ ] `npx hint .` for html files 
 
+- After fixing error build deploy for production
+
+### Install 
+```
+npm i 
+```
 ### Usage
 
- Execute the following thing:
- 
- - Pokemon dashboard
- - As a pokemon Social Media
+- Pokemon Rendering
+- Commenting 
+- Liking
 
 
 ### Run tests
 
-- To run all test cases you need to run `npm test` in the root dir 
-- Linters for files run in the root dir
-  - `npx eslint .` for JS linting
-  - `npx stylelint "**/*.{css,scss}"`for CSS or SCSS linting
-  - `npx hint .` for HTML linting
-  - `--fix` flag for intant fixable fix
- 
+- Currently, this Project don't have any Unit test
+- You can do manual checking
+  - Score added properly
+  - Form validation for score and scorer work properly 
 
 ### Deployment
 
 You can deploy this project using:
-- Fork our Repo and clone it or download `zip` and extract it
-- Edit some changes
-- Run `npm run build` to make our project production ready
-- deploy it using [GitHub](www.github.com) pages 
- 
+
+- For this repo and use git hub pages to deploy it 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- AUTHORS -->
 
@@ -191,8 +200,6 @@ You can deploy this project using:
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **mobile and tablet version**
 - [ ] **improve functionality**
@@ -240,7 +247,5 @@ If you like my Project give it a Star ✨🌟
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](https://github.com/martinkarugaba/pokemon-dashboard/blob/master/MIT.md) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
