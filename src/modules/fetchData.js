@@ -2,7 +2,7 @@ import addLike from './addLike.js';
 import showPop from './commentPopUP.js'; // eslint-disable-line
 import itemCounter from './itemsCount.js';
 
-const baseUrl = 'https://pokeapi.co/api/v2/pokemon?limit=102&offset=0';
+const baseUrl = 'https://pokeapi.co/api/v2/pokemon?limit=50&offset=0';
 const cardsContainer = document.querySelector('.cards-container');
 
 const dataBase = [];
